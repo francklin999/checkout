@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Checkout RD</title>
+</head>
+
+<body>
+    <header id="header" class="container-fluid">
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="img/logo.png" alt="logo" title="logo">
+            </a>
+            <div class="d-flex justify-content-center">
+                <a class="btn btn-dark" href="#">Ver Carrinho</a>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <form id="checkout" class="row mt-3">
+            <div class="col-md-4">
+                <header class="bg-dark text-light p-2 text-center">
+                    Dados Pessoais
+                </header>
+                <div class="p-2">
+                    <div class="form-group">
+                        <label for="nomeUsuario">Nome Completo:</label>
+                        <input  class="form-control" type="text" id="nomeUsuario" name="nomeUsuario" placeholder="Digite seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cpf">CPF:</label>
+                        <input class="form-control" type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input class="form-control" type="tel" name="telefone" id="telefone" placeholder="11 9999-9999" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input class="form-control" type="email" name="email" id="email" placeholder="exemplo@exemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Digite sua Senha:</label>
+                        <input class="form-control" type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmaSenha">Comfirme sua Senha:</label>
+                        <input class="form-control" type="password" name="confirmaSenha" id="confirmaSenha"
+                            placeholder="Confimar senha" required>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <header class="bg-dark text-light p-2 text-center">
+                    Entrega
+                </header>
+                <div class="p-2">
+                    <div class="form-group">
+                        <label for="cep">CEP:</label>
+                        <input class="form-control" type="text" name="cep" id="cep" placeholder="Digite seu CEP" required >
+                    </div>
+                    <div class="form-group">
+                        <label for="endereco">Endereço:</label>
+                        <input class="form-control" type="text" name="endereco" id="endereco" placeholder="Digite seu Endereço" required >
+                    </div>
+                    <div class="form-group">
+                        <label for="numero">Numero:</label>
+                        <input class="form-control" type="text" name="numero" id="numero" placeholder="Digite o numero da residência" required >
+                    </div>
+                    <div class="form-group">
+                        <label for="complemento">Complemento:</label>
+                        <input class="form-control" type="text" name="complemento" id="complemento" placeholder="Ex:. escola, posto ,mercado etc.." required >
+                    </div>
+                    <div class="form-group">
+                        <label for="bairro">Bairro:</label>
+                        <input class="form-control" type="text" name="bairro" id="bairro" placeholder="Digite o bairro" required >
+                    </div>
+                    <div class="row">
+                        <div class="col-6 form-group">
+                            <label for="cidade">Cidade:</label>
+                            <input class="form-control" type="text" name="cidade" id="cidade" placeholder="Digite sua cidade" required >
+                        </div>
+                        <div class=" col-6 form-group">
+                            <label for="estado">Estado:</label>
+                            <select name="estado" class="form-control">
+                                <option value="" disabled selected>Estado</option>
+                                <option value="SP">SP</option>
+                                <option value="RJ">RJ</option>
+                                <option value="MG">MG</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label for="freteRapido">Frete rápido <br> R$ 50,00</label>
+                            <input type="radio" name="frete" id="freteRapido">
+                        </div>
+                        <div class="col-6">
+                            <label for="freteNormal">Frete normal <br> R$ 20,00</label>
+                            <input type="radio" name="frete" id="freteNormal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <header class="bg-dark text-light p-2 text-center">
+                    Pagamento
+                </header>
+                <div class="p-2">
+                    <div class="d-flex justify-content-center flex-column">
+                        <h4>Camisa Preta GG</h4>
+                        <p>R$ 32,87</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="numeroCartao">Numero do cartão:</label>
+                        <input class="form-control" type="number" name="numeroCartao" id="numeroCartao" placeholder="0000 0000 0000 0000" required >
+                    </div>
+                    <div class="row">
+                        <div class="col-8 form-group">
+                            <label for="dataValidade">Data de validade:</label>
+                            <input class="form-control" type="month" name="dataValidade" id="dataValidade" placeholder="MM/AA"required >
+                        </div>
+                        <div class="col-4 form-group">
+                            <label for="codigoSeguranca">CVV:</label>
+                            <input class="form-control" type="number" name="codigoSeguranca" id="codigoSeguranca" placeholder="CVV" required >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="nomeTitular">Nome titular:</label>
+                        <input class="form-control" type="text" name="nomeTitular" id="nomeTitular" placeholder="Nome Titular" required >
+                    </div>
+                    <div class="form-group">
+                        <label for="cpfTitular">CPF titular:</label>
+                        <input class="form-control" type="text" id="cpfTitular" name="cpfTitular" placeholder="000.000.000-00" required>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-success">Finalizar Compra</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
