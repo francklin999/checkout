@@ -30,27 +30,32 @@
                 <div class="p-2">
                     <div class="form-group">
                         <label for="nomeUsuario">Nome Completo:</label>
-                        <input  class="form-control" type="text" id="nomeUsuario" name="nomeUsuario" placeholder="Digite seu nome completo" required>
+                        <input class="form-control" type="text" id="nomeUsuario" name="nomeUsuario"
+                            placeholder="Digite seu nome completo" required>
                     </div>
                     <div class="form-group">
                         <label for="cpf">CPF:</label>
-                        <input class="form-control" type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                        <input class="form-control" type="text" id="cpf" name="cpf" placeholder="000.000.000-00"
+                            required>
                     </div>
                     <div class="form-group">
                         <label for="telefone">Telefone:</label>
-                        <input class="form-control" type="tel" name="telefone" id="telefone" placeholder="11 9999-9999" required>
+                        <input class="form-control" type="tel" name="telefone" id="telefone" placeholder="11 9999-9999"
+                            required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input class="form-control" type="email" name="email" id="email" placeholder="exemplo@exemplo.com" required>
+                        <input class="form-control" type="email" name="email" id="email"
+                            placeholder="exemplo@exemplo.com" required>
                     </div>
                     <div class="form-group">
                         <label for="senha">Digite sua Senha:</label>
-                        <input class="form-control" type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                        <input class="form-control" type="password" name="senha" id="senha"
+                            placeholder="Digite sua senha" required>
                     </div>
                     <div class="form-group">
-                        <label for="confirmaSenha">Comfirme sua Senha:</label>
-                        <input class="form-control" type="password" name="confirmaSenha" id="confirmaSenha"
+                        <label for="senhaConf">Comfirme sua Senha:</label>
+                        <input class="form-control" type="password" name="senhaConf" id="senhaConf"
                             placeholder="Confimar senha" required>
                     </div>
                 </div>
@@ -62,36 +67,43 @@
                 <div class="p-2">
                     <div class="form-group">
                         <label for="cep">CEP:</label>
-                        <input class="form-control" type="text" name="cep" id="cep" placeholder="Digite seu CEP" required >
+                        <input class="form-control" type="text" name="cep" id="cep" placeholder="Digite seu CEP"
+                            required>
                     </div>
                     <div class="form-group">
                         <label for="endereco">Endereço:</label>
-                        <input class="form-control" type="text" name="endereco" id="endereco" placeholder="Digite seu Endereço" required >
+                        <input class="form-control" type="text" name="endereco" id="endereco"
+                            placeholder="Digite seu Endereço" required>
                     </div>
                     <div class="form-group">
                         <label for="numero">Numero:</label>
-                        <input class="form-control" type="text" name="numero" id="numero" placeholder="Digite o numero da residência" required >
+                        <input class="form-control" type="text" name="numero" id="numero"
+                            placeholder="Digite o numero da residência" required>
                     </div>
                     <div class="form-group">
                         <label for="complemento">Complemento:</label>
-                        <input class="form-control" type="text" name="complemento" id="complemento" placeholder="Ex:. escola, posto ,mercado etc.." required >
+                        <input class="form-control" type="text" name="complemento" id="complemento"
+                            placeholder="Ex:. escola, apto , bloco ,mercado etc..">
                     </div>
                     <div class="form-group">
                         <label for="bairro">Bairro:</label>
-                        <input class="form-control" type="text" name="bairro" id="bairro" placeholder="Digite o bairro" required >
+                        <input class="form-control" type="text" name="bairro" id="bairro" placeholder="Digite o bairro"
+                            required>
                     </div>
                     <div class="row">
                         <div class="col-6 form-group">
                             <label for="cidade">Cidade:</label>
-                            <input class="form-control" type="text" name="cidade" id="cidade" placeholder="Digite sua cidade" required >
+                            <input class="form-control" type="text" name="cidade" id="cidade"
+                                placeholder="Digite sua cidade" required>
                         </div>
                         <div class=" col-6 form-group">
                             <label for="estado">Estado:</label>
-                            <select name="estado" class="form-control">
+                            <select id='estado' name="estado" class="form-control">
                                 <option value="" disabled selected>Estado</option>
                                 <option value="SP">SP</option>
                                 <option value="RJ">RJ</option>
                                 <option value="MG">MG</option>
+                                <option value="BA">BA</option>
                             </select>
                         </div>
                     </div>
@@ -118,33 +130,60 @@
                     </div>
                     <div class="form-group">
                         <label for="numeroCartao">Numero do cartão:</label>
-                        <input class="form-control" type="number" name="numeroCartao" id="numeroCartao" placeholder="0000 0000 0000 0000" required >
+                        <input class="form-control" type="number" name="numeroCartao" id="numeroCartao"
+                            placeholder="0000 0000 0000 0000" required>
                     </div>
                     <div class="row">
                         <div class="col-8 form-group">
                             <label for="dataValidade">Data de validade:</label>
-                            <input class="form-control" type="month" name="dataValidade" id="dataValidade" placeholder="MM/AA"required >
+                            <input class="form-control" type="month" name="dataValidade" id="dataValidade"
+                                placeholder="MM/AA" required>
                         </div>
                         <div class="col-4 form-group">
                             <label for="codigoSeguranca">CVV:</label>
-                            <input class="form-control" type="number" name="codigoSeguranca" id="codigoSeguranca" placeholder="CVV" required >
+                            <input class="form-control" type="number" name="codigoSeguranca" id="codigoSeguranca"
+                                placeholder="CVV" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="nomeTitular">Nome titular:</label>
-                        <input class="form-control" type="text" name="nomeTitular" id="nomeTitular" placeholder="Nome Titular" required >
+                        <input class="form-control" type="text" name="nomeTitular" id="nomeTitular"
+                            placeholder="Nome Titular" required>
                     </div>
                     <div class="form-group">
                         <label for="cpfTitular">CPF titular:</label>
-                        <input class="form-control" type="text" id="cpfTitular" name="cpfTitular" placeholder="000.000.000-00" required>
+                        <input class="form-control" type="text" id="cpfTitular" name="cpfTitular"
+                            placeholder="000.000.000-00" required>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-success">Finalizar Compra</button>
+                        <button type="button" data-toggle="modal" data-target="#compraFinalizada"
+                            class="btn btn-success">Finalizar Compra</button>
                     </div>
                 </div>
             </div>
         </form>
     </main>
+
+    <div id="compraFinalizada" class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Compra realizada com sucesso!!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        <p>Uhuulll <br> Parabens pela compra!! </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-toggle="modal" data-target="#compraFinalizada" class="btn btn-success" data-dismiss="modal">Obrigado!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -156,7 +195,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
